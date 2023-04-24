@@ -33,6 +33,7 @@ namespace ALIAS
             admin.Show();
         }
 
+        // Initial DB table setup
         private void firstSetup()
         {
             DBConnection.openConnection();
