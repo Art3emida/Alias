@@ -29,6 +29,7 @@ namespace ALIAS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameTeams));
             this.btnStart = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -68,9 +69,10 @@ namespace ALIAS
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnStart);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GameTeams";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "ALIAS";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GameTeams_FormClosed);
             this.ResumeLayout(false);
 

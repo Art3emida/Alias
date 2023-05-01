@@ -30,6 +30,7 @@ namespace ALIAS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Winner));
             this.AnimationTimer = new System.Windows.Forms.Timer(this.components);
             this.lblWinnerScore = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -126,9 +127,11 @@ namespace ALIAS
             this.Controls.Add(this.lblWinnerName);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Winner";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Winner";
+            this.Text = "ALIAS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Winner_FormClosed);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormPaintEvent);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormMouseDown);
             this.ResumeLayout(false);

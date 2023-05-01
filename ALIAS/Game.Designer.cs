@@ -30,6 +30,7 @@ namespace ALIAS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.MainPanel = new System.Windows.Forms.Panel();
             this.btnReady = new System.Windows.Forms.Button();
@@ -229,9 +230,11 @@ namespace ALIAS
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.SummaryPanel);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Game";
+            this.Text = "ALIAS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Game_FormClosed);
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
             this.SummaryPanel.ResumeLayout(false);

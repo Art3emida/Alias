@@ -14,8 +14,7 @@ namespace ALIAS
         public PlayerInfo(string name, int score)
         {
             Name = name;
-            Score = score;
-            
+            Score = score;            
         }
     }
 }

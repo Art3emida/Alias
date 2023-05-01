@@ -29,6 +29,7 @@ namespace ALIAS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.begin_Button = new System.Windows.Forms.Button();
             this.btnAdminEnter = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -59,7 +60,7 @@ namespace ALIAS
             this.btnAdminEnter.UseVisualStyleBackColor = false;
             this.btnAdminEnter.Click += new System.EventHandler(this.btnAdminEnter_Click);
             // 
-            // Form1
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -70,9 +71,10 @@ namespace ALIAS
             this.Controls.Add(this.begin_Button);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "ALIAS";
             this.ResumeLayout(false);
 
         }

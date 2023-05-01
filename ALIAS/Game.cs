@@ -156,6 +156,11 @@ namespace ALIAS
             SummaryPanel.Visible = false;
 
             NextPlayer();
-        }  
+        }
+
+        private void Game_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _parent.Close();
+        }
     }
 }

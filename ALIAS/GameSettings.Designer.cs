@@ -98,10 +98,11 @@ namespace ALIAS
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "GameSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "ALIAS";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GameSettings_FormClosed);
             this.Load += new System.EventHandler(this.GameSettings_Load);
             this.ResumeLayout(false);
